@@ -1,0 +1,44 @@
+footer{
+	padding: 40px 0;
+	background: #323232;
+	img{
+		max-width: 150px;
+		margin-bottom: 30px;
+	}
+
+	ul{
+		list-style: none;
+		padding: 0;
+		li{
+			a{
+				color: white;
+			}
+		}
+	}
+
+	h4{
+		color: white;
+	}
+
+	.store{
+		max-width: 90px;
+		margin-right: 10px;
+	}
+
+	.redes{
+		li{
+		    list-style: none;
+		    display: inline-block;
+		    width: 35px;
+		    height: 35px;
+		    background: #888;
+		    color: white;
+		    border-radius: 50%;
+		    font-size: 20px;
+		    text-align: center;
+		    padding-top: 3px;
+		    box-sizing: border-box;
+		    margin-right: 10px;
+		}
+	}
+}

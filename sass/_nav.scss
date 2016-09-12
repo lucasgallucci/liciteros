@@ -1,0 +1,32 @@
+nav{ 
+	margin-bottom: 0px !important;
+	border-radius: 0 !important;
+	.navbar-brand{
+		padding: 5px;
+		img{
+			max-width: 130px;
+		}
+	}
+
+	li{
+		a{
+			display: inline-block !important;
+			&.user{
+				padding-top:10px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+
+	.input{
+		background: white;
+		display: inline-block;
+		border-radius: 4px;
+		input, select{
+			border: none;
+			box-shadow: none;
+		}
+	}
+}
+
+

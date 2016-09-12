@@ -63,61 +63,24 @@ a {
   font-size: 12.5px; }
 
 nav {
-  margin-bottom: 0px !important; }
+  margin-bottom: 0px !important;
+  border-radius: 0 !important; }
   nav .navbar-brand {
     padding: 5px; }
     nav .navbar-brand img {
       max-width: 130px; }
-  nav li a.user {
-    padding-top: 10px;
-    padding-bottom: 10px; }
-
-header {
-  padding: 60px 0; }
-  header h1, header h3 {
-    max-width: 700px;
-    color: white;
-    margin: 40px 0; }
-  header .btn-primary {
-    background: none;
-    border: 1px solid white;
-    color: white;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: "MuseoSans900"; }
-
-section {
-  padding: 40px 0; }
-  section h2 {
-    margin-bottom: 30px; }
-
-#action-panel {
-  background: #dfdfdf;
-  padding: 15px 0; }
-  @media screen and (max-width: 768px) {
-    #action-panel a.btn1 {
-      margin-bottom: 20px; } }
-
-#ofertas {
-  background: #2067B9; }
-  #ofertas h2 {
-    color: white; }
-
-#categorias ul {
-  column-count: 4;
-  list-style: none;
-  padding: 0; }
-  @media screen and (max-width: 768px) {
-    #categorias ul {
-      column-count: 2; } }
-  @media screen and (max-width: 480px) {
-    #categorias ul {
-      column-count: 1; } }
-  #categorias ul li {
-    border-bottom: 1px solid #DFDFDF;
-    padding: 5px 0; }
-    #categorias ul li a {
-      color: #EF1347; }
+  nav li a {
+    display: inline-block !important; }
+    nav li a.user {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  nav .input {
+    background: white;
+    display: inline-block;
+    border-radius: 4px; }
+    nav .input input, nav .input select {
+      border: none;
+      box-shadow: none; }
 
 footer {
   padding: 40px 0;
@@ -148,5 +111,59 @@ footer {
     padding-top: 3px;
     box-sizing: border-box;
     margin-right: 10px; }
+
+header {
+  padding: 60px 0; }
+  header h1, header h3 {
+    max-width: 700px;
+    color: white;
+    margin: 40px 0; }
+  header .btn-primary {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "MuseoSans900"; }
+
+section {
+  padding: 40px 0; }
+  section h2 {
+    margin-bottom: 30px; }
+
+#action-panel {
+  background: #dfdfdf;
+  padding: 15px 0; }
+  @media screen and (max-width: 768px) {
+    #action-panel a.btn1 {
+      margin-bottom: 20px; } }
+
+#ad-container {
+  background: #dfdfdf;
+  padding: 15px 0; }
+  @media screen and (max-width: 768px) {
+    #ad-container a.ad1 {
+      margin-bottom: 20px; } }
+
+#ofertas {
+  background: #2067B9; }
+  #ofertas h2 {
+    color: white; }
+
+#categorias ul {
+  column-count: 4;
+  list-style: none;
+  padding: 0; }
+  @media screen and (max-width: 768px) {
+    #categorias ul {
+      column-count: 2; } }
+  @media screen and (max-width: 480px) {
+    #categorias ul {
+      column-count: 1; } }
+  #categorias ul li {
+    border-bottom: 1px solid #DFDFDF;
+    padding: 5px 0; }
+    #categorias ul li a {
+      color: #EF1347; }
 
 /*# sourceMappingURL=style.css.map */

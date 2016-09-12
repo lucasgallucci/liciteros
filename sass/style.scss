@@ -3,23 +3,9 @@
 @import "theme";
 @import "licitacion-tile";
 @import "oferta-tile";
+@import "nav";
+@import "footer";
 
-nav{ 
-	margin-bottom: 0px !important;
-	.navbar-brand{
-		padding: 5px;
-		img{
-			max-width: 130px;
-		}
-	}
-
-	li{
-		a.user{
-			padding-top:10px;
-			padding-bottom: 10px;
-		}
-	}
-}
 
 header{
 	padding: 60px 0;
@@ -59,6 +45,17 @@ section{
 	}
 }
 
+#ad-container{
+	background:#dfdfdf;
+	padding: 15px 0;
+	a{
+		@media screen and (max-width:768px){
+			&.ad1{
+				margin-bottom: 20px;				
+			}
+		}
+	}
+}
 
 #ofertas{
 	background: #2067B9;
@@ -88,51 +85,5 @@ section{
 	    		color: $color1;
 	    	}
 	    }
-	}
-}
-
-
-footer{
-	padding: 40px 0;
-	background: #323232;
-	img{
-		max-width: 150px;
-		margin-bottom: 30px;
-	}
-
-	ul{
-		list-style: none;
-		padding: 0;
-		li{
-			a{
-				color: white;
-			}
-		}
-	}
-
-	h4{
-		color: white;
-	}
-
-	.store{
-		max-width: 90px;
-		margin-right: 10px;
-	}
-
-	.redes{
-		li{
-		    list-style: none;
-		    display: inline-block;
-		    width: 35px;
-		    height: 35px;
-		    background: #888;
-		    color: white;
-		    border-radius: 50%;
-		    font-size: 20px;
-		    text-align: center;
-		    padding-top: 3px;
-		    box-sizing: border-box;
-		    margin-right: 10px;
-		}
 	}
 }
