@@ -1,0 +1,46 @@
+.btn-primary{
+	background: $color1;
+	border: none;
+	transition: 1s;
+	&:hover{
+		background: darken($color1,10%);
+	}
+}
+
+.btn-secundary{
+	background: $color2;
+	border: none;
+	transition: 1s;
+	&:hover{
+		background: darken($color2,10%);
+	}
+}
+
+.btn-border{
+    color: #777;
+    border: 1px solid #777;
+    padding: 5px 15px !important;
+    margin: 10px !important;
+    border-radius: 4px; 
+}
+
+.magenta-orange{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef1347+0,f46a3c+100 */
+	background: rgb(239,19,71); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(239,19,71,1) 0%, rgba(244,106,60,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(239,19,71,1) 0%,rgba(244,106,60,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(239,19,71,1) 0%,rgba(244,106,60,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef1347', endColorstr='#f46a3c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+body{
+	font-family: $text-font;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: $title-font;
+}
+
+a{
+	font-family: "MuseoSans500";
+}

@@ -1,0 +1,30 @@
+.licitacion-tile{
+	
+
+    padding: 15px;
+    .lic{
+    	border: 1px solid #ddd;
+    	padding: 10px;
+	}
+	.img{
+		padding-right: 0;
+	}
+
+	h4{
+		margin: 0 0 10px 0;
+	}
+
+	hr{
+		margin: 0 0 10px 0;
+	}
+
+	.licitar{
+		display: flex;
+		align-items: center;
+	}
+
+	p{
+		font-size: 12.5px;
+	}
+}
+

@@ -1,0 +1,152 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900";
+.btn-primary {
+  background: #EF1347;
+  border: none;
+  transition: 1s; }
+  .btn-primary:hover {
+    background: #c20d38; }
+
+.btn-secundary {
+  background: #279599;
+  border: none;
+  transition: 1s; }
+  .btn-secundary:hover {
+    background: #1d6d70; }
+
+.btn-border {
+  color: #777;
+  border: 1px solid #777;
+  padding: 5px 15px !important;
+  margin: 10px !important;
+  border-radius: 4px; }
+
+.magenta-orange, header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef1347+0,f46a3c+100 */
+  background: #ef1347;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ef1347 0%, #f46a3c 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #ef1347 0%, #f46a3c 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #ef1347 0%, #f46a3c 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef1347', endColorstr='#f46a3c',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+body {
+  font-family: Roboto, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "MuseoSans700", sans-serif; }
+
+a {
+  font-family: "MuseoSans500"; }
+
+.licitacion-tile {
+  padding: 15px; }
+  .licitacion-tile .lic {
+    border: 1px solid #ddd;
+    padding: 10px; }
+  .licitacion-tile .img {
+    padding-right: 0; }
+  .licitacion-tile h4 {
+    margin: 0 0 10px 0; }
+  .licitacion-tile hr {
+    margin: 0 0 10px 0; }
+  .licitacion-tile .licitar {
+    display: flex;
+    align-items: center; }
+  .licitacion-tile p {
+    font-size: 12.5px; }
+
+.oferta-tile p {
+  font-size: 12.5px; }
+
+nav {
+  margin-bottom: 0px !important; }
+  nav .navbar-brand {
+    padding: 5px; }
+    nav .navbar-brand img {
+      max-width: 130px; }
+  nav li a.user {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+header {
+  padding: 60px 0; }
+  header h1, header h3 {
+    max-width: 700px;
+    color: white;
+    margin: 40px 0; }
+  header .btn-primary {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "MuseoSans900"; }
+
+section {
+  padding: 40px 0; }
+  section h2 {
+    margin-bottom: 30px; }
+
+#action-panel {
+  background: #dfdfdf;
+  padding: 15px 0; }
+  @media screen and (max-width: 768px) {
+    #action-panel a.btn1 {
+      margin-bottom: 20px; } }
+
+#ofertas {
+  background: #2067B9; }
+  #ofertas h2 {
+    color: white; }
+
+#categorias ul {
+  column-count: 4;
+  list-style: none;
+  padding: 0; }
+  @media screen and (max-width: 768px) {
+    #categorias ul {
+      column-count: 2; } }
+  @media screen and (max-width: 480px) {
+    #categorias ul {
+      column-count: 1; } }
+  #categorias ul li {
+    border-bottom: 1px solid #DFDFDF;
+    padding: 5px 0; }
+    #categorias ul li a {
+      color: #EF1347; }
+
+footer {
+  padding: 40px 0;
+  background: #323232; }
+  footer img {
+    max-width: 150px;
+    margin-bottom: 30px; }
+  footer ul {
+    list-style: none;
+    padding: 0; }
+    footer ul li a {
+      color: white; }
+  footer h4 {
+    color: white; }
+  footer .store {
+    max-width: 90px;
+    margin-right: 10px; }
+  footer .redes li {
+    list-style: none;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #888;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3px;
+    box-sizing: border-box;
+    margin-right: 10px; }
+
+/*# sourceMappingURL=style.css.map */
