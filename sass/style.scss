@@ -60,7 +60,8 @@ section{
 	a{
 		@media screen and (max-width:768px){
 			&.ad1{
-				margin-bottom: 20px;				
+				margin-bottom: 10px;
+				display: inline-block;				
 			}
 		}
 	}
@@ -76,6 +77,10 @@ section{
 
 #categorias{
 	ul{
+		-moz-column-count: 4;
+		-webkit-column-count: 4;
+		-ms-column-count: 4;
+		-o-column-count: 4;
 		column-count: 4;
 	    list-style: none;
 	    padding: 0;
@@ -106,5 +111,21 @@ footer{
 			color: $color1;
 			text-decoration: none;
 		}
+	}
+}
+
+
+
+
+.carousel-control {
+	width:100px;
+	color: $color1;
+	opacity: 1;
+	&.left, &.right{
+		background-image:none;
+	}
+
+	@media (max-width: 1024px){
+		width: 25px;
 	}
 }

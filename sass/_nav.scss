@@ -1,4 +1,11 @@
 nav{ 
+	a{
+		color: $color1;
+		@extend .transition;
+		&:hover{
+			color: $color1dark
+		}
+	}
 	margin-bottom: 0px !important;
 	border-radius: 0 !important;
 	.navbar-brand{
@@ -28,20 +35,48 @@ nav{
 			background: none;
 		}
 
+		button{
+			border-radius: 0 5px 5px 0;
+			height: 34px;
+		}
+
 		input{
-			width: 100% !important;
+			width: 300px !important;
 		}
 
 
 		@media (max-width: 768px){
 			width: 100%;
-
+			button{
+				border-radius: 0 0 5px 5px;
+			}
 		}
 	}
 	.navbar-toggle {
 		background: $color1;
 		span{
 			background: white;
+		}
+	}
+
+	@media (max-width: 768px){
+		.btn-border{
+
+		}
+	}
+
+
+	.navbar-right{
+		@media (max-width: 768px){
+			li{
+				border-bottom: 1px solid #dedede;
+				&:last-child{
+					border: none;
+				}
+			}
+			span{
+				margin-right: 10px;
+			}
 		}
 	}
 }

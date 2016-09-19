@@ -65,6 +65,10 @@ a {
 nav {
   margin-bottom: 0px !important;
   border-radius: 0 !important; }
+  nav a {
+    color: #EF1347; }
+    nav a:hover {
+      color: #c20d38; }
   nav .navbar-brand {
     padding: 5px; }
     nav .navbar-brand img {
@@ -82,15 +86,27 @@ nav {
       border: none;
       box-shadow: none;
       background: none; }
+    nav .input button {
+      border-radius: 0 5px 5px 0;
+      height: 34px; }
     nav .input input {
-      width: 100% !important; }
+      width: 300px !important; }
     @media (max-width: 768px) {
       nav .input {
-        width: 100%; } }
+        width: 100%; }
+        nav .input button {
+          border-radius: 0 0 5px 5px; } }
   nav .navbar-toggle {
     background: #EF1347; }
     nav .navbar-toggle span {
       background: white; }
+  @media (max-width: 768px) {
+    nav .navbar-right li {
+      border-bottom: 1px solid #dedede; }
+      nav .navbar-right li:last-child {
+        border: none; }
+    nav .navbar-right span {
+      margin-right: 10px; } }
 
 footer {
   padding: 40px 0;
@@ -122,7 +138,7 @@ footer {
     box-sizing: border-box;
     margin-right: 10px; }
 
-.transition, footer a {
+.transition, nav a, footer a {
   transition: 0.5s; }
 
 header {
@@ -162,7 +178,8 @@ section {
   padding: 15px 0; }
   @media screen and (max-width: 768px) {
     #ad-container a.ad1 {
-      margin-bottom: 20px; } }
+      margin-bottom: 10px;
+      display: inline-block; } }
 
 #ofertas {
   background: #2067B9; }
@@ -170,6 +187,10 @@ section {
     color: white; }
 
 #categorias ul {
+  -moz-column-count: 4;
+  -webkit-column-count: 4;
+  -ms-column-count: 4;
+  -o-column-count: 4;
   column-count: 4;
   list-style: none;
   padding: 0; }
@@ -190,5 +211,15 @@ footer a {
   footer a:hover {
     color: #EF1347;
     text-decoration: none; }
+
+.carousel-control {
+  width: 100px;
+  color: #EF1347;
+  opacity: 1; }
+  .carousel-control.left, .carousel-control.right {
+    background-image: none; }
+  @media (max-width: 1024px) {
+    .carousel-control {
+      width: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
