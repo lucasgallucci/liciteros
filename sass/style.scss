@@ -58,11 +58,15 @@ section{
 	background:#dfdfdf;
 	padding: 15px 0;
 	a{
-		@media screen and (max-width:768px){
+		@media screen and (max-width:992px){
 			&.ad1{
 				margin-bottom: 10px;
 				display: inline-block;				
 			}
+		}
+	
+		img{
+			display: inline-block;
 		}
 	}
 }

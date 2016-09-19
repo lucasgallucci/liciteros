@@ -1,4 +1,7 @@
 nav{ 
+	margin-bottom: 0px !important;
+	border-radius: 0 !important;
+
 	a{
 		color: $color1;
 		@extend .transition;
@@ -6,10 +9,10 @@ nav{
 			color: $color1dark
 		}
 	}
-	margin-bottom: 0px !important;
-	border-radius: 0 !important;
+
 	.navbar-brand{
 		padding: 5px;
+		padding-left: 15px;
 		img{
 			max-width: 130px;
 		}
@@ -73,9 +76,12 @@ nav{
 				&:last-child{
 					border: none;
 				}
-			}
-			span{
-				margin-right: 10px;
+				a{
+					display: block !important;
+					span{
+						margin-right: 10px;
+					}
+				}
 			}
 		}
 	}

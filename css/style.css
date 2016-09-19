@@ -70,7 +70,8 @@ nav {
     nav a:hover {
       color: #c20d38; }
   nav .navbar-brand {
-    padding: 5px; }
+    padding: 5px;
+    padding-left: 15px; }
     nav .navbar-brand img {
       max-width: 130px; }
   nav li a {
@@ -105,8 +106,10 @@ nav {
       border-bottom: 1px solid #dedede; }
       nav .navbar-right li:last-child {
         border: none; }
-    nav .navbar-right span {
-      margin-right: 10px; } }
+      nav .navbar-right li a {
+        display: block !important; }
+        nav .navbar-right li a span {
+          margin-right: 10px; } }
 
 footer {
   padding: 40px 0;
@@ -176,10 +179,12 @@ section {
 #ad-container {
   background: #dfdfdf;
   padding: 15px 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     #ad-container a.ad1 {
       margin-bottom: 10px;
       display: inline-block; } }
+  #ad-container a img {
+    display: inline-block; }
 
 #ofertas {
   background: #2067B9; }
