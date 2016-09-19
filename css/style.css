@@ -20,7 +20,7 @@
   margin: 10px !important;
   border-radius: 4px; }
 
-.magenta-orange, header {
+.magenta-orange {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef1347+0,f46a3c+100 */
   background: #ef1347;
   /* Old browsers */
@@ -75,12 +75,22 @@ nav {
       padding-top: 10px;
       padding-bottom: 10px; }
   nav .input {
-    background: white;
+    background: #eee;
     display: inline-block;
     border-radius: 4px; }
     nav .input input, nav .input select {
       border: none;
-      box-shadow: none; }
+      box-shadow: none;
+      background: none; }
+    nav .input input {
+      width: 100% !important; }
+    @media (max-width: 768px) {
+      nav .input {
+        width: 100%; } }
+  nav .navbar-toggle {
+    background: #EF1347; }
+    nav .navbar-toggle span {
+      background: white; }
 
 footer {
   padding: 40px 0;
@@ -112,18 +122,27 @@ footer {
     box-sizing: border-box;
     margin-right: 10px; }
 
+.transition, footer a {
+  transition: 0.5s; }
+
 header {
-  padding: 60px 0; }
+  background: url("../img/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  background-position-y: -250px; }
+  @media (max-width: 1050px) {
+    header {
+      background-position-y: 0; } }
   header h1, header h3 {
     max-width: 700px;
     color: white;
-    margin: 40px 0; }
+    margin: 40px 0;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7); }
   header .btn-primary {
-    background: none;
-    border: 1px solid white;
-    color: white;
     text-transform: uppercase;
     font-size: 20px;
+    padding: 10px 30px;
     font-family: "MuseoSans900"; }
 
 section {
@@ -165,5 +184,11 @@ section {
     padding: 5px 0; }
     #categorias ul li a {
       color: #EF1347; }
+
+footer a {
+  text-decoration: none; }
+  footer a:hover {
+    color: #EF1347;
+    text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,12 +19,29 @@ nav{
 	}
 
 	.input{
-		background: white;
+		background: #eee;
 		display: inline-block;
 		border-radius: 4px;
 		input, select{
 			border: none;
 			box-shadow: none;
+			background: none;
+		}
+
+		input{
+			width: 100% !important;
+		}
+
+
+		@media (max-width: 768px){
+			width: 100%;
+
+		}
+	}
+	.navbar-toggle {
+		background: $color1;
+		span{
+			background: white;
 		}
 	}
 }
