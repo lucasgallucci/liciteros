@@ -1,4 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900";
+body, html {
+  height: 100%; }
+
 .btn-primary {
   background: #EF1347;
   border: none;
@@ -6,11 +9,11 @@
   .btn-primary:hover {
     background: #c20d38; }
 
-.btn-secundary {
+.btn-secundary, .btn-facebook {
   background: #279599;
   border: none;
   transition: 1s; }
-  .btn-secundary:hover {
+  .btn-secundary:hover, .btn-facebook:hover {
     background: #1d6d70; }
 
 .btn-border {
@@ -19,6 +22,21 @@
   padding: 5px 15px !important;
   margin: 10px !important;
   border-radius: 4px; }
+
+.btn-facebook {
+  background: #3B5998;
+  color: white;
+  padding-bottom: 12px; }
+  .btn-facebook span {
+    font-size: 20px;
+    padding-right: 15px;
+    margin-right: 10px;
+    border-right: 1px solid white;
+    display: inline-block;
+    padding-left: 10px; }
+  .btn-facebook:hover {
+    background: #1e2e4f;
+    color: white; }
 
 .magenta-orange {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef1347+0,f46a3c+100 */
@@ -226,5 +244,23 @@ footer a {
   @media (max-width: 1024px) {
     .carousel-control {
       width: 25px; } }
+
+#login {
+  background: url("../img/back-login.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #login .formulario {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-top: 30px;
+    box-shadow: 1px 1px 2px rgba(33, 33, 33, 0.3);
+    margin-top: 150px; }
+    #login .formulario img {
+      max-width: 140px;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%); }
 
 /*# sourceMappingURL=style.css.map */
