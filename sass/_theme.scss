@@ -49,6 +49,16 @@ body,html{
 }
 
 
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: $color1;
+    text-decoration: none;
+    background: none;
+ }
+
+ .nav>li>a:focus, .nav>li>a:hover {
+    background: none;
+}
+
 .magenta-orange{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef1347+0,f46a3c+100 */
 	background: rgb(239,19,71); /* Old browsers */
