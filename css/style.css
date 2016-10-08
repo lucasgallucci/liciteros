@@ -46,7 +46,7 @@ body, html {
 .nav > li > a:focus, .nav > li > a:hover {
   background: none; }
 
-.magenta-orange {
+.magenta-orange, #alta-licitacion header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef1347+0,f46a3c+100 */
   background: #ef1347;
   /* Old browsers */
@@ -100,6 +100,10 @@ nav {
     padding-left: 15px; }
     nav .navbar-brand img {
       max-width: 130px; }
+  nav .navbar-toggle {
+    float: left;
+    margin-right: 0;
+    margin-left: 15px; }
   nav li a {
     display: inline-block !important; }
     nav li a.user {
@@ -170,21 +174,21 @@ footer {
 .transition, nav a, footer a {
   transition: 0.5s; }
 
-header {
+#home header {
   background: url("../img/back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 60px 0;
   background-position-y: -250px; }
   @media (max-width: 1050px) {
-    header {
+    #home header {
       background-position-y: 0; } }
-  header h1, header h3 {
+  #home header h1, #home header h3 {
     max-width: 700px;
     color: white;
     margin: 40px 0;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7); }
-  header .btn-primary {
+  #home header .btn-primary {
     text-transform: uppercase;
     font-size: 20px;
     padding: 10px 30px;
@@ -293,5 +297,83 @@ nav .notificaciones {
     @media (max-width: 768px) {
       nav .notificaciones:before {
         display: none; } }
+
+#alta-licitacion .alta {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 30px; }
+#alta-licitacion header h1 {
+  color: white; }
+#alta-licitacion .seleccion {
+  margin: 10px 0 30px 0px; }
+  #alta-licitacion .seleccion .label-default {
+    font-size: 13px;
+    font-weight: 200; }
+    #alta-licitacion .seleccion .label-default .glyphicon {
+      top: 2px; }
+#alta-licitacion #cat2, #alta-licitacion #cat3 {
+  display: none; }
+#alta-licitacion .categorias select {
+  margin: 20px 0; }
+#alta-licitacion .perfil .well {
+  padding: 0 10px;
+  min-height: 90px;
+  display: flex;
+  align-items: center; }
+  #alta-licitacion .perfil .well.text-center {
+    justify-content: center; }
+  #alta-licitacion .perfil .well h5, #alta-licitacion .perfil .well p, #alta-licitacion .perfil .well small {
+    margin: 0; }
+  #alta-licitacion .perfil .well input[type=checkbox] {
+    margin: 1px 0 0 -20px; }
+#alta-licitacion .img input[type=file] {
+  display: inline-block; }
+#alta-licitacion .img .o:after, #alta-licitacion .img .o:before {
+  content: "";
+  height: 1px;
+  width: 10%;
+  display: inline-block;
+  background: #a6a6a6;
+  top: -4px;
+  position: relative;
+  margin: 0 10px; }
+#alta-licitacion .imagenes .img {
+  margin-bottom: 30px; }
+  #alta-licitacion .imagenes .img .settings {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    padding-top: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    left: 0px;
+    opacity: 0;
+    transition: 1s; }
+    #alta-licitacion .imagenes .img .settings a {
+      margin-bottom: 10px;
+      display: inline-block; }
+  #alta-licitacion .imagenes .img:hover .settings {
+    opacity: 1; }
+#alta-licitacion #parte2 {
+  overflow: auto; }
+#alta-licitacion .negociable {
+  margin-top: 30px; }
+#alta-licitacion .formas-pago .checkbox {
+  display: inline-block;
+  margin: 10px; }
+
+#alta-licitacion .obligatorio {
+  color: #EF1347; }
+#alta-licitacion #perfil {
+  display: inline-block;
+  width: 200px;
+  margin-left: 10px; }
+  @media (max-width: 368px) {
+    #alta-licitacion #perfil {
+      width: 100%;
+      margin-left: 0; } }
+#alta-licitacion #perfil-empresa {
+  margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */

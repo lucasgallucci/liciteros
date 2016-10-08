@@ -18,6 +18,12 @@ nav{
 		}
 	}
 
+	.navbar-toggle {
+		float: left;
+		margin-right: 0;
+		margin-left: 15px;
+	}
+
 	li{
 		a{
 			display: inline-block !important;

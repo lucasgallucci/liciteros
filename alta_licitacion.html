@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Liciteros.com</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+</head>
+
+<body id="alta-licitacion">
+	<nav class="navbar navbar">
+		<div class="container">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="img/liciteros.svg"></a>
+			</div>
+
+			
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<form class="navbar-form navbar-left">
+					<div class="input">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="buscar">
+						</div>
+
+						<div class="form-group">
+							<select class="form-control">
+								<option>Ofertas</option>
+								<option>Licitaciones</option>
+							</select>
+						</div>
+
+						<button type="submit" class="btn btn-primary hidden-xs"><span class="fa fa-search"></span></button>
+
+						<button type="submit" class="btn btn-primary visible-xs btn-block"><span class="fa fa-search"></span> buscar</button>
+					</div>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+
+					<li class="dropdown">
+						<a  href="#" class="dropdown-toggle user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<img src="http://placehold.it/30x30" class="img-circle">
+							<span>Nombre Apellido</span>
+						</a>
+
+						<ul class="dropdown-menu notificaciones">
+							<li><a href="">Publicaciones</a></li>
+							<li><a href="">Operaciones</a></li>
+							<li><a href="">Datos personales</a></li>
+							<li><a href="">Configuración</a></li>
+							<li><a href="">Salir</a></li>
+						</ul>
+					</li>				
+					
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-bell"></span>
+							<span class="visible-xs-inline-block">Notificaciones</span>
+						</a>
+					</li>
+
+					
+					<li>
+						<a href="#" class="visible-xs">
+							<span class="glyphicon glyphicon glyphicon-pencil"></span> 
+							<span>Publicar</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-question-sign"></span> 
+							<span class="visible-xs-inline-block">Ayuda</span>
+						</a>
+					</li>
+
+					<li class="hidden-xs"><a href="#" class="btn-border">Publicar</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Alta de licitación</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="licitacion1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 alta">
+					<form>
+						<div class="form-group">
+							<label for="titulo">Título</label>
+							<input type="text" class="form-control input-lg" name="titulo" placeholder="¿Qué estás buscando?">
+						</div>
+						<div class="form-group">
+							<label for="descripcion">Descripción</label>
+							<textarea class="form-control" placeholder="Danos detalles sobre tu búsqueda" name="descripcion"></textarea>
+						</div>
+						<div class="form-group categorias">
+							<label for="categoria">Selecciona una categoría para tu búsqueda</label>
+							<!--
+							<div class="seleccion">
+								<span class="label label-default">Comunicaciones <span class="glyphicon glyphicon-remove"></span></span>
+								<span class="label label-default">Telefonía <span class="glyphicon glyphicon-remove"></span></span>
+								<span class="label label-default">Mobile <span class="glyphicon glyphicon-remove"></span></span>
+								<span class="label label-default">Tablet <span class="glyphicon glyphicon-remove"></span></span>
+							</div>
+							
+							<small>Selecciona sub-categorías para mejorar la información de tu licitacion</small>
+						-->
+
+
+						<select class="form-control input-lg col-md-6" id="cat-sel">
+							<option>Seleccionar categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+							<option value="ok">Categoría</option>
+						</select>
+
+
+
+						<div  id="cat2">
+							<small>Selecciona subcategorias para mejorar tu publicación</small>
+							
+							<select class="form-control" id="cat-sel2">
+								<option>Seleccionar categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+							</select>
+
+						</div>
+
+						<div id="cat3">
+
+							<select class="form-control">
+								<option>Seleccionar categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+								<option value="ok">Categoría</option>
+							</select>
+
+
+						</div>
+					</div>
+						
+						<div>
+							<hr>
+						</div>
+						
+						<div class="form-group">
+							<label>Selecciona un perfil para esta publicación</label>
+							<div class="row">
+								<div class="col-md-6 perfil">
+									<div class="well">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												<h5>Casa</h5>
+												<p>Palermo (1425)</p>
+												<small>Santa Fe 1345</small>
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6 perfil">
+									<div class="well">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												<h5>Oficina</h5>
+												<p>Belgrano (1480)</p>
+												<small>Santa Fe 1345</small>
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6 perfil">
+									<div class="well">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												<h5>Casa viejos</h5>
+												<p>San Fernando (3029)</p>
+												<small>Santa Fe 1345</small>
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6 perfil">
+									<div class="well">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												<h5>Todas</h5>
+												<small>Selecciona esta opción para utilizar todos tus perfiles en tu publicación</small>
+												
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6 perfil">
+									<div class="well text-center">
+										<a class="btn btn-default" data-toggle="modal" data-target="#nuevo-perfil">Agregar un nuevo perfil</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="parte2">
+							<div class="form-group">
+								<div class="img well text-center">
+									<i class="glyphicon glyphicon-picture"></i>
+									<p>Arrastra las fotos del producto</p>
+									<p class="o">o</p>
+									<input type="file">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="row imagenes">
+									<div class="col-md-3 col-sm-4 col-xs-6 img">
+										<img src="http://placehold.it/500x500" class="img-responsive">
+
+										<div class="settings">
+											<a href="#" class="btn btn-xs btn-primary">Elegir como principal</a>
+											<br>
+											<a href="#" class="btn btn-xs btn-danger">Eliminar</a>
+										</div>
+									</div>
+
+
+									<div class="col-md-3 col-sm-4 col-xs-6 img">
+										<img src="http://placehold.it/500x500" class="img-responsive">
+
+										<div class="settings">
+											<a href="#" class="btn btn-xs btn-primary">Elegir como principal</a>
+											<br>
+											<a href="#" class="btn btn-xs btn-danger">Eliminar</a>
+										</div>
+									</div>
+
+
+									<div class="col-md-3 col-sm-4 col-xs-6 img">
+										<img src="http://placehold.it/500x500" class="img-responsive">
+
+										<div class="settings">
+											<a href="#" class="btn btn-xs btn-primary">Elegir como principal</a>
+											<br>
+											<a href="#" class="btn btn-xs btn-danger">Eliminar</a>
+										</div>
+									</div>
+
+
+									<div class="col-md-3 col-sm-4 col-xs-6 img">
+										<img src="http://placehold.it/500x500" class="img-responsive">
+
+										<div class="settings">
+											<a href="#" class="btn btn-xs btn-primary">Elegir como principal</a>
+											<br>
+											<a href="#" class="btn btn-xs btn-danger">Eliminar</a>
+										</div>
+									</div>
+
+
+									<div class="col-md-3 col-sm-4 col-xs-6 img">
+										<img src="http://placehold.it/500x500" class="img-responsive">
+
+										<div class="settings">
+											<a href="#" class="btn btn-xs btn-primary">Elegir como principal</a>
+											<br>
+											<a href="#" class="btn btn-xs btn-danger">Eliminar</a>
+										</div>
+									</div>
+
+
+									<div class="col-md-3 col-sm-4 col-xs-6 img">
+										<img src="http://placehold.it/500x500" class="img-responsive">
+
+										<div class="settings">
+											<a href="#" class="btn btn-xs btn-primary">Elegir como principal</a>
+											<br>
+											<a href="#" class="btn btn-xs btn-danger">Eliminar</a>
+										</div>
+									</div>
+
+
+									<div class="col-md-3 col-sm-4 col-xs-6 img">
+										<img src="http://placehold.it/500x500" class="img-responsive">
+
+										<div class="settings">
+											<a href="#" class="btn btn-xs btn-primary">Elegir como principal</a>
+											<br>
+											<a href="#" class="btn btn-xs btn-danger">Eliminar</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label>Año:</label>
+										<input class="form-control">
+									</div>
+								</div>
+
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label>Kilometros:</label>
+										<input class="form-control">
+									</div>
+								</div>
+
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label>Marca:</label>
+										<input class="form-control">
+									</div>
+								</div>
+
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label>Modelo:</label>
+										<input class="form-control">
+									</div>
+								</div>
+
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label>Combustible:</label>
+										<input class="form-control">
+									</div>
+								</div>
+							</div>
+
+
+							
+								<div class="row">
+									<div class="col-sm-3">
+										<div class="form-group">
+											<label>Moneda:</label>
+											<select class="form-control">
+												<option>AR$</option>
+												<option>US$</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-sm-5">
+										<div class="form-group">
+											<label>Precio</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<div class="col-sm-4">
+										<div class="checkbox negociable">
+								<label>
+									<input type="checkbox"> El precio es negociable
+								</label>
+							</div>
+									</div>
+
+								</div>
+							
+							
+
+							<div class="form-group formas-pago">
+								<label class="negociable">Forma de pago</label>
+								<div class="checkbox visible-xs-block visible-lg-inline-block visible-md-inline-block visible-sm-inline-block ">
+									<label>
+										<input type="checkbox"> Efectivo
+									</label>
+								</div>
+
+								<div class="checkbox visible-xs-block visible-lg-inline-block visible-md-inline-block visible-sm-inline-block ">
+									<label>
+										<input type="checkbox"> Transferencia
+									</label>
+								</div>
+
+								<div class="checkbox visible-xs-block visible-md-inline-block visible-sm-inline-block visible-lg-inline-block ">
+									<label>
+										<input type="checkbox"> Tarjeta
+									</label>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="text-right form-group" id="mas">
+							<a type="button" class="btn btn-default" id="agregar">Agregar más información</a>
+							<button type="submit" class="btn btn-primary">Publicar</button>
+						</div>
+
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<img src="img/liciteros2.svg">
+				</div>
+
+				<div class="col-md-3">
+					<h4>Sobre Liciteros</h4>
+					<ul>
+						<li>
+							<a href="">
+								¿Qué es Liciteros?
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Cómo funciona
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Preguntas Frecuentes
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Contacto
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="col-md-4"></div>
+
+				<div class="col-md-3">
+					<h4>Seguinos en las redes</h4>
+					<ul class="redes">
+						<li><span class="ion-social-facebook"></span></li>
+						<li><span class="ion-social-twitter"></span></li>
+						<li><span class="ion-social-instagram"></span></li>
+					</ul>
+
+					<hr/>
+					<h4>Descargá la aplicación</h4>
+					<img src="https://alcomercio.es/public/img/alcom/play_store.png" class="store">
+					<img src="https://www.betrocket.com/public/img/app/app-store.png" class="store">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Nuevo perfil -->
+	<div class="modal fade" id="nuevo-perfil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Nuevo perfil</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="perfil">Nombre</label>
+							<input type="text" class="form-control" name="perfil" placeholder="Agrega un nombre a este perfil">
+						</div>
+						<div class="form-group">
+							<label for="direccion">Dirección</label>
+							<input type="text" class="form-control" id="direccion" placeholder="Ej: Av. Santa Fe 1345">
+						</div>
+
+						<div class="row">
+							<div class="form-group col-sm-4">
+								<label for="piso">Piso</label>
+								<input type="text" class="form-control" id="piso" placeholder="">
+							</div>
+							<div class="form-group col-sm-4">
+								<label for="depto">Departamento</label>
+								<input type="text" class="form-control" id="depto" placeholder="">
+							</div>
+							<div class="form-group col-sm-4">
+								<label for="cp">Código Postal</label>
+								<input type="text" class="form-control" id="cp" placeholder="">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="ciudad">Cuidad</label>
+							<select class="form-control">
+								<option>Seleccionar</option>
+								<option>Ciudad Autónoma de Buenos Aires</option>
+								<option>Buenos Aires</option>
+								<option>Seleccionar</option>
+								<option>Seleccionar</option>
+								<option>Seleccionar</option>
+							</select>
+						</div>
+						
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+					<button type="button" class="btn btn-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+<script type="text/javascript">
+$(document).on("ready", function(){
+	$("#cat-sel").on("change", function(){
+		if(($("#cat-sel").val())=="ok"){
+			$("#cat2").css("display","block");
+		}
+	})
+
+	$("#cat-sel2").on("change", function(){
+		if(($("#cat-sel2").val())=="ok"){
+			$("#cat3").css("display","block");
+		}
+	})
+
+	alto= $("#parte2").css("height");
+	mover= $("#parte2").offset();
+	console.log(alto)
+	console.log(mover.top)
+	$("#parte2").css({
+		"height":"0",
+		"overflow":"hidden",
+	});
+
+	$("#agregar").on("click", function(){
+		$(this).css("display","none");
+		$("#parte2").css({
+			"height":"auto",
+		});
+		$("body").animate({
+			scrollTop:(mover.top),
+			},1000)
+	})
+
+})
+
+</script>
+
+</html>
