@@ -1,8 +1,25 @@
 
 .oferta-tile{
+	.imagen{
+		height: 190px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		img{
+		}
+	}
 
-
+	.caption{
+		h4{
+			height: 40px;
+    		overflow: hidden;
+		}
+	
 		p{
-		font-size: 12.5px;
+			font-size: 12.5px;
+			height: 37px;
+    		overflow: hidden;
+		}
 	}
 }

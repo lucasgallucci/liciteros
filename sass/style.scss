@@ -9,7 +9,10 @@
 .transition{
 	transition: 0.5s;
 }
-
+.well{
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.05), 1px 1px 2px rgba(0,0,0,0.2);
+	background: white;
+}
 #home{
 	header{
 		background: url("../img/back.jpg");
@@ -73,7 +76,7 @@ section{
 }
 
 #ofertas{
-	background: #2067B9;
+	background: $color3;
 	h2{
 		color: white;
 	}
@@ -81,7 +84,44 @@ section{
 
 
 #categorias{
-	ul{
+	.cat-padre{
+		padding: 0;
+		margin: 0;
+		li{
+			display: inline-block;
+			padding: 0px 10px;
+			margin: 10px 10px;
+			border-bottom: 4px solid $color3;
+			position: relative;
+
+			&.selected{
+				&:after{
+					content: "";
+					display: inline-block;
+					height: 6px;
+					width: 6px;
+					transform: rotate(45deg);
+					background: $color3;
+					position: absolute;
+				    bottom: -7px;
+				    left: 50%;
+				}
+			}
+			
+			&:first-child{
+				margin: 0;
+			}
+			a{
+				font-size: 17px;
+				color: $color3;	
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.categorias{
 		-moz-column-count: 4;
 		-webkit-column-count: 4;
 		-ms-column-count: 4;
@@ -328,5 +368,14 @@ nav{
 
 	#perfil-empresa{
 		margin-top: 20px;
+	}
+}
+
+
+#alta-licitacion{
+	.actions{
+		a{
+			margin-bottom: 15px;
+		}
 	}
 }
