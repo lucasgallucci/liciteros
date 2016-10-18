@@ -493,6 +493,8 @@ nav .notificaciones {
     color: #333;
     font-size: 14px;
     padding: 5px 10px; }
+#resumen .carousel {
+  margin-bottom: 30px; }
 #resumen .detalles h6 {
   border-bottom: 1px solid #ddd;
   margin-top: 25px;
