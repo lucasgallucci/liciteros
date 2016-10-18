@@ -46,7 +46,7 @@ body, html {
 .nav > li > a:focus, .nav > li > a:hover {
   background: none; }
 
-.magenta-orange, #alta-licitacion header {
+.magenta-orange, #alta-licitacion header, #resumen header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef1347+0,f46a3c+100 */
   background: #ef1347;
   /* Old browsers */
@@ -201,12 +201,42 @@ footer {
     box-sizing: border-box;
     margin-right: 10px; }
 
+.breadcrumb {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0; }
+
+a {
+  color: #EF1347;
+  text-decoration: none; }
+  a:hover {
+    color: #c20d38; }
+
 .transition, nav a, footer a {
   transition: 0.5s; }
 
 .well {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 1px 1px 2px rgba(0, 0, 0, 0.2);
   background: white; }
+  .well.user .user-pic {
+    max-width: 100px;
+    margin: auto; }
+  .well.user .operaciones {
+    margin: 0;
+    padding: 0; }
+    .well.user .operaciones li {
+      display: inline-block;
+      margin-right: 15px; }
+      .well.user .operaciones li span {
+        font-size: 20px;
+        position: relative;
+        top: 2px; }
+        .well.user .operaciones li span.positiva {
+          color: green; }
+        .well.user .operaciones li span.negativa {
+          color: red; }
+        .well.user .operaciones li span.neutra {
+          color: blue; }
 
 #home header {
   background: url("../img/back.jpg");
@@ -438,5 +468,38 @@ nav .notificaciones {
 
 #alta-licitacion .actions a {
   margin-bottom: 15px; }
+
+#resumen header {
+  padding: 20px 0;
+  margin-bottom: 30px; }
+  #resumen header h1 {
+    color: white;
+    margin-bottom: 5px; }
+  #resumen header .publicado {
+    margin-bottom: 10px;
+    display: inline-block;
+    color: white; }
+  #resumen header .breadcrumb {
+    background: none; }
+    #resumen header .breadcrumb a {
+      color: white; }
+      #resumen header .breadcrumb a:hover {
+        color: white;
+        text-decoration: underline; }
+    #resumen header .breadcrumb .active {
+      color: white; }
+  #resumen header .label {
+    background: white;
+    color: #333;
+    font-size: 14px;
+    padding: 5px 10px; }
+#resumen .detalles h6 {
+  border-bottom: 1px solid #ddd;
+  margin-top: 25px;
+  margin-bottom: 0; }
+#resumen .actions p {
+  margin: 10px 0; }
+#resumen .actions a {
+  margin-right: 15px; }
 
 /*# sourceMappingURL=style.css.map */
