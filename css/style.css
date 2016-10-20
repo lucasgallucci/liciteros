@@ -503,5 +503,22 @@ nav .notificaciones {
   margin: 10px 0; }
 #resumen .actions a {
   margin-right: 15px; }
+#resumen .mensajes .usuario {
+  margin-bottom: 15px; }
+  #resumen .mensajes .usuario img {
+    max-width: 25px;
+    display: inline-block; }
+  #resumen .mensajes .usuario a {
+    color: #666;
+    text-decoration: underline; }
+#resumen .mensajes small {
+  color: #888;
+  margin-left: 15px; }
+#resumen .mensajes .terminar {
+  color: #555;
+  margin-left: 15px; }
+#resumen .mensajes .vermas {
+  color: #279599;
+  margin-left: 15px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -486,4 +486,38 @@ nav{
 			margin-right: 15px;
 		}
 	}
+
+
+	.mensajes{
+
+		.usuario{
+			margin-bottom: 15px;
+			img{
+				max-width: 25px;
+				display: inline-block;
+			}
+			a{
+				color: #666;
+				text-decoration: underline;
+			}	
+		}
+
+		.conversacion{
+			
+		}
+		small{	
+			color: #888;
+			margin-left: 15px;
+		}
+
+		.terminar{
+			color: #555;
+			margin-left: 15px;
+		}
+
+		.vermas{
+			color: $color2;
+			margin-left: 15px;
+		}
+	}
 }
