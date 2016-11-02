@@ -469,6 +469,17 @@ nav .notificaciones {
 #alta-licitacion .actions a {
   margin-bottom: 15px; }
 
+@media (max-width: 768px) {
+  #resumen {
+    padding-bottom: 50px; } }
+#resumen .alertas {
+  padding: 10px 0; }
+  #resumen .alertas p {
+    margin: 0; }
+  #resumen .alertas a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: underline; }
 #resumen header {
   padding: 20px 0;
   margin-bottom: 30px; }
@@ -520,5 +531,12 @@ nav .notificaciones {
 #resumen .mensajes .vermas {
   color: #279599;
   margin-left: 15px; }
+#resumen .licitar-mobile {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=style.css.map */

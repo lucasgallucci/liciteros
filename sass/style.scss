@@ -430,6 +430,21 @@ nav{
 
 
 #resumen{
+	@media (max-width:768px){
+		padding-bottom: 50px;
+	}
+
+	.alertas{
+		padding: 10px 0;
+		p{
+			margin: 0;
+		}
+		a{
+			margin: 0 10px;
+			color: #333;
+			text-decoration: underline;
+		}
+	}
 	header{
 		@extend .magenta-orange;
 		padding: 20px 0;
@@ -519,5 +534,14 @@ nav{
 			color: $color2;
 			margin-left: 15px;
 		}
+	}
+
+	.licitar-mobile{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		padding: 10px;
+		background: white;
+		box-shadow: 0 0 4px rgba(0,0,0,0.5);
 	}
 }
