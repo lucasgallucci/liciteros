@@ -201,6 +201,21 @@ footer {
     box-sizing: border-box;
     margin-right: 10px; }
 
+#busqueda .filtros {
+  border-right: 1px solid #ddd; }
+  #busqueda .filtros ul {
+    list-style: none;
+    padding: 0; }
+    #busqueda .filtros ul li span {
+      float: right; }
+#busqueda .resultado .pagination > li > a, #busqueda .resultado .pagination > li > span {
+  color: #333;
+  background-color: transparent;
+  border: none; }
+  #busqueda .resultado .pagination > li > a:hover, #busqueda .resultado .pagination > li > span:hover {
+    color: #EF1347;
+    text-decoration: underline; }
+
 .breadcrumb {
   background: white;
   border-bottom: 1px solid #ddd;

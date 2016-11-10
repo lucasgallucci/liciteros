@@ -1,0 +1,27 @@
+#busqueda{
+	.filtros{
+		border-right: 1px solid #ddd;
+		ul{
+			list-style: none;
+			padding: 0;
+			li{
+				span{
+					float: right;
+				}
+			}
+		}
+	}
+
+
+	.resultado{
+		.pagination>li>a, .pagination>li>span {
+	   	 	color: $text-color;
+		    background-color: transparent;
+		    border: none;
+		    &:hover{
+		    	color: $color1;
+		    	text-decoration: underline;
+		    }
+		}
+	}	
+}
