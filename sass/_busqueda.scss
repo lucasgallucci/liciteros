@@ -12,6 +12,18 @@
 		}
 	}
 
+	.licitacion-tile, .licitacion-tile-horizontal{
+		p{
+			margin: 0;
+		}
+	}
+
+	.mostrar{
+		form{
+			display: inline-block;
+			margin-right: 10px;
+		}
+	}
 
 	.resultado{
 		.pagination>li>a, .pagination>li>span {

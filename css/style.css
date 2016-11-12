@@ -2,6 +2,12 @@
 body, html {
   height: 100%; }
 
+.green {
+  color: #009900; }
+
+.rojo {
+  color: #B20000; }
+
 .btn-primary {
   background: #EF1347;
   border: none;
@@ -68,19 +74,19 @@ h1, h2, h3, h4, h5, h6 {
 a {
   font-family: "MuseoSans500"; }
 
-.licitacion-tile {
+.licitacion-tile, .licitacion-tile-horizontal {
   padding: 15px; }
-  .licitacion-tile .lic {
+  .licitacion-tile .lic, .licitacion-tile-horizontal .lic {
     border: 1px solid #ddd;
     padding: 10px; }
-  .licitacion-tile .img {
+  .licitacion-tile .img, .licitacion-tile-horizontal .img {
     padding-right: 0; }
-  .licitacion-tile h4 {
+  .licitacion-tile h4, .licitacion-tile-horizontal h4 {
     margin: 0 0 10px 0;
     height: 77px;
     overflow: hidden;
     position: relative; }
-    .licitacion-tile h4:after {
+    .licitacion-tile h4:after, .licitacion-tile-horizontal h4:after {
       content: "";
       height: 40px;
       width: 100%;
@@ -96,13 +102,22 @@ a {
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
       /* IE6-9 */ }
-  .licitacion-tile hr {
+  .licitacion-tile hr, .licitacion-tile-horizontal hr {
     margin: 0 0 10px 0; }
-  .licitacion-tile .licitar {
+  .licitacion-tile .licitar, .licitacion-tile-horizontal .licitar {
     display: flex;
     align-items: center; }
-  .licitacion-tile p {
+  .licitacion-tile p, .licitacion-tile-horizontal p {
     font-size: 12.5px; }
+
+.licitacion-tile-horizontal {
+  padding: 0;
+  border-bottom: 1px solid #ddd !important;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+  .licitacion-tile-horizontal .lic {
+    border: none;
+    padding: 0; }
 
 .oferta-tile .imagen {
   height: 190px;
@@ -208,6 +223,11 @@ footer {
     padding: 0; }
     #busqueda .filtros ul li span {
       float: right; }
+#busqueda .licitacion-tile p, #busqueda .licitacion-tile-horizontal p {
+  margin: 0; }
+#busqueda .mostrar form {
+  display: inline-block;
+  margin-right: 10px; }
 #busqueda .resultado .pagination > li > a, #busqueda .resultado .pagination > li > span {
   color: #333;
   background-color: transparent;
