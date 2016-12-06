@@ -48,9 +48,19 @@
 	border-bottom: 1px solid #ddd !important;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
+	h4{
+		height: auto;
+		&:after{
+    		display: none;
+    		}
+	}
 	.lic{
 		border: none;
 		padding: 0;
+	}
+
+	.btn-primary{
+		margin-top: 20px;
 	}
 }
  

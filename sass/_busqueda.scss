@@ -18,14 +18,22 @@
 		}
 	}
 
-	.mostrar{
-		form{
-			display: inline-block;
-			margin-right: 10px;
-		}
-	}
-
+	
 	.resultado{
+		.mostrar-content{
+			overflow: auto;
+		}
+		.mostrar{
+			form{
+				display: inline-block;
+				margin-right: 10px;
+			}
+			float: right;
+			@media screen and (max-width: 600px){
+				float: left;	
+			}
+		}
+
 		.pagination>li>a, .pagination>li>span {
 	   	 	color: $text-color;
 		    background-color: transparent;

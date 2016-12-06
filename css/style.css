@@ -115,9 +115,15 @@ a {
   border-bottom: 1px solid #ddd !important;
   padding-bottom: 10px;
   margin-bottom: 10px; }
+  .licitacion-tile-horizontal h4 {
+    height: auto; }
+    .licitacion-tile-horizontal h4:after {
+      display: none; }
   .licitacion-tile-horizontal .lic {
     border: none;
     padding: 0; }
+  .licitacion-tile-horizontal .btn-primary {
+    margin-top: 20px; }
 
 .oferta-tile .imagen {
   height: 190px;
@@ -225,9 +231,16 @@ footer {
       float: right; }
 #busqueda .licitacion-tile p, #busqueda .licitacion-tile-horizontal p {
   margin: 0; }
-#busqueda .mostrar form {
-  display: inline-block;
-  margin-right: 10px; }
+#busqueda .resultado .mostrar-content {
+  overflow: auto; }
+#busqueda .resultado .mostrar {
+  float: right; }
+  #busqueda .resultado .mostrar form {
+    display: inline-block;
+    margin-right: 10px; }
+  @media screen and (max-width: 600px) {
+    #busqueda .resultado .mostrar {
+      float: left; } }
 #busqueda .resultado .pagination > li > a, #busqueda .resultado .pagination > li > span {
   color: #333;
   background-color: transparent;
