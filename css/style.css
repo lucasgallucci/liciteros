@@ -16,11 +16,11 @@ body, html {
     background: #c20d38; }
 
 .btn-secundary, .btn-facebook {
-  background: #279599;
+  background: #673AB7;
   border: none;
   transition: 1s; }
   .btn-secundary:hover, .btn-facebook:hover {
-    background: #1d6d70; }
+    background: #512e90; }
 
 .btn-border {
   color: #777;
@@ -249,6 +249,39 @@ footer {
     color: #EF1347;
     text-decoration: underline; }
 
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity; }
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0); }
+.carousel-fade .carousel-control {
+  z-index: 2; }
+.carousel-fade .carousel-text {
+  position: absolute;
+  bottom: 30px;
+  width: 100%; }
+  .carousel-fade .carousel-text h1, .carousel-fade .carousel-text h3 {
+    max-width: 700px;
+    color: white;
+    margin: 40px 0;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7); }
+  .carousel-fade .carousel-text .btn-primary {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 30px;
+    font-family: "MuseoSans900"; }
+
 .breadcrumb {
   background: white;
   border-bottom: 1px solid #ddd;
@@ -286,33 +319,13 @@ a {
         .well.user .operaciones li span.neutra {
           color: blue; }
 
-#home header {
-  background: url("../img/back.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 60px 0;
-  background-position-y: -250px; }
-  @media (max-width: 1050px) {
-    #home header {
-      background-position-y: 0; } }
-  #home header h1, #home header h3 {
-    max-width: 700px;
-    color: white;
-    margin: 40px 0;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7); }
-  #home header .btn-primary {
-    text-transform: uppercase;
-    font-size: 20px;
-    padding: 10px 30px;
-    font-family: "MuseoSans900"; }
-
 section {
   padding: 40px 0; }
   section h2 {
     margin-bottom: 30px; }
 
 #action-panel {
-  background: #dfdfdf;
+  background: #00BCD4;
   padding: 15px 0; }
   @media screen and (max-width: 768px) {
     #action-panel a.btn1 {
@@ -577,7 +590,7 @@ nav .notificaciones {
   color: #555;
   margin-left: 15px; }
 #resumen .mensajes .vermas {
-  color: #279599;
+  color: #673AB7;
   margin-left: 15px; }
 #resumen .licitar-mobile {
   position: fixed;

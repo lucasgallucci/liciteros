@@ -1,0 +1,52 @@
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+
+
+
+    .carousel-text{
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        h1,h3{
+            max-width: 700px;
+            color: white;
+            margin: 40px 0;
+            text-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+        }
+
+        .btn-primary{
+            text-transform: uppercase;
+            font-size: 20px;
+            padding: 10px 30px;
+            font-family: "MuseoSans900"
+        }
+    }
+}
